@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AA 도시락</title>
+    <title>비건 도시락</title>
     <style>
-        /* 전체 스타일 */
         body {
-            margin: 0;
             font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #fdf6f0;
             color: #333;
         }
@@ -17,16 +17,18 @@
             background-color: #a3d9a5;
             padding: 20px;
             text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
 
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #e2f0e2;
-            padding: 10px 0;
+            background-color: #d3f0d8;
+            padding: 10px;
+            text-align: center;
         }
 
         nav a {
@@ -34,17 +36,11 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #4CAF50;
         }
 
         .hero {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #f0fff0;
+            padding: 40px 20px;
         }
 
         .hero img {
@@ -52,67 +48,58 @@
             border-radius: 15px;
         }
 
-        .hero h1 {
+        .hero h2 {
+            font-size: 1.8em;
             margin-top: 20px;
-            font-size: 2rem;
-            color: #4CAF50;
-        }
-
-        .hero p {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            color: #666;
         }
 
         .menu {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-            padding: 40px 20px;
+            justify-content: center;
+            padding: 20px;
         }
 
         .menu-item {
-            background-color: #fff;
-            width: 250px;
-            margin: 20px;
+            background-color: #ffffff;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
         }
 
         .menu-item:hover {
-            transform: translateY(-5px);
+            transform: scale(1.05);
         }
 
         .menu-item img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            border-radius: 10px;
         }
 
         .menu-item h3 {
-            margin: 15px;
-            color: #4CAF50;
+            margin: 10px 0 5px 0;
         }
 
         .menu-item p {
-            margin: 0 15px 15px;
-            color: #777;
+            font-size: 0.9em;
+            color: #666;
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #a3d9a5;
-            color: #fff;
+            text-align: center;
+            padding: 15px;
+            color: white;
         }
     </style>
 </head>
 <body>
-
     <header>
-        AA 도시락
+        <h1>비건 도시락</h1>
     </header>
 
     <nav>
@@ -123,32 +110,30 @@
     </nav>
 
     <section class="hero">
-        <img src="https://via.placeholder.com/300x300.png?text=Vegan+Lunch" alt="AA 도시락">
-        <h1>건강하고 맛있는 AA 도시락</h1>
-        <p>20~30대 MZ세대를 위한 캐주얼한 도시락</p>
+        <img src="https://via.placeholder.com/300x200.png?text=Vegan+Lunch" alt="비건 도시락">
+        <h2>건강하고 맛있는 비건 도시락, 지금 만나보세요!</h2>
     </section>
 
     <section class="menu">
         <div class="menu-item">
-            <img src="https://via.placeholder.com/250x200.png?text=샐러드+도시락" alt="abaab">
-            <h3>ababa</h3>
-            <p>신선한 채소와 퀴노아로 가볍게 즐기는 점심</p>
+            <img src="https://via.placeholder.com/250x150.png?text=메뉴1" alt="메뉴1">
+            <h3>그린 샐러드 도시락</h3>
+            <p>신선한 채소와 고단백 두부로 만든 건강한 도시락</p>
         </div>
         <div class="menu-item">
-            <img src="https://via.placeholder.com/250x200.png?text=두부+도시락" alt="두부 도시락">
-            <h3>두부 도시락</h3>
-            <p>단백질 가득한 두부로 든든한 한끼</p>
+            <img src="https://via.placeholder.com/250x150.png?text=메뉴2" alt="메뉴2">
+            <h3>토마토 파스타 도시락</h3>
+            <p>비건 치즈와 토마토 소스로 맛을 살린 파스타</p>
         </div>
         <div class="menu-item">
-            <img src="https://via.placeholder.com/250x200.png?text=채식+김밥" alt="채식 김밥">
-            <h3>채식 김밥</h3>
-            <p>간편하게 즐기는 AA 김밥, 건강하게 한입</p>
+            <img src="https://via.placeholder.com/250x150.png?text=메뉴3" alt="메뉴3">
+            <h3>렌틸콩 커리 도시락</h3>
+            <p>풍부한 향신료와 렌틸콩으로 만든 든든한 한 끼</p>
         </div>
     </section>
 
     <footer>
-        &copy; 2025 AA 도시락 | All Rights Reserved
+        &copy; 2025 비건 도시락. All rights reserved.
     </footer>
-
 </body>
 </html>
